@@ -113,6 +113,10 @@ const DisplayController = (() => {
         console.log(GameBoard.gameArray);
     }
     const updateSquare = (square) => {
+        if (square.textContent != '') {
+            console.log('Please choose unoccupied square');
+            return
+        } 
         symbol = GameBoard.Players[GameBoard.turn % 2].symbol;
         console.log(GameBoard.turn);
         square.textContent = symbol;
