@@ -23,4 +23,8 @@ body {
 .square {
     background-color: white;
     aspect-ratio: 1;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 5rem;
 }
